@@ -1,0 +1,245 @@
+/* Réalisation du cadre Hébergment à Marseille */
+
+.hebergements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.hebergements .container-marseille {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 65%;
+    height: 550px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.container-marseille .etablissement-marseille {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+
+.container-marseille .etablissement-marseille .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    border: 5px solid white;
+    width: 30%;
+    box-shadow: 5px 5px 10px #d8d8d8;
+}
+
+.etablissement-marseille .cards img {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+}
+
+.container-populaires a,
+.etablissement-marseille a {
+    text-decoration: none;
+    color: black;
+}
+
+.etablissement-marseille .cards .nuithotel {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0 5px 10px;
+}
+
+.etablissement-marseille .cards h3 {
+    display: flex;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.etablissement-marseille .cards p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.etablissement-marseille .cards .etoile {
+    display: flex;
+    font-size: 12px;
+    color: #0065FC;
+    margin: 0 0 5px 10px;
+}
+
+.container-populaires .cards .etoilegris,
+.etablissement-marseille .cards .etoile .etoilegris {
+    color: #F2F2F2;
+}
+
+.hebergements .container-marseille h2 {
+    font-size: 17px;
+    margin: 20px 0 0 20px;
+}
+
+.hebergements .container-marseille a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    margin: 0px 0 30px 0;
+}
+
+.hebergements .container-marseille a h4 {
+    margin: 0 0 0 20px;
+}
+
+.hebergements .euros {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Réalisation du cadre Les plus populaires */
+
+.hebergements .container-populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    height: 550px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+
+.hebergements .container-populaires .plus-populaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container-populaires .plus-populaires .cards {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 5px solid white;
+    margin: 19px;
+    width: 80%;
+    height: 120px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #d8d8d8;
+}
+
+.container-populaires .cards img {
+    display: flex;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    width: 35%;
+    height: 120px;
+    margin-right: 10px;
+}
+
+.container-populaires .cards h3 {
+    display: flex;
+    margin: 0;
+    font-size: 14px;
+}
+
+.container-populaires .cards .etoile {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #0065FC;
+}
+
+.container-populaires .cards .nuithotel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.container-populaires .cards .nuithotel p {
+    font-size: 13px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.container-populaires h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    margin: 20px 10px 0 10px;
+}
+
+.hebergements a:hover {
+    color: #0065FC;
+}
+
+
+
+/*tablette */
+
+@media screen and (max-width: 992px) {
+    .hebergements {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .hebergements .container-populaires,
+    .hebergements .container-marseille {
+        width: 550px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+/*mobile*/
+
+@media screen and (max-width: 768px) {
+    .hebergements {
+        display: flex;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .hebergements .container-populaires {
+        display: flex;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .hebergements .container-marseille {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .hebergements .container-marseille .etablissement-marseille {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .container-marseille .etablissement-marseille .cards {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 10px 0 20px;
+        width: 90%;
+    }
+
+    .etablissement-marseille .cards img {
+        display: flex;
+        width: 100%;
+        height: 120px;
+    }
+}
